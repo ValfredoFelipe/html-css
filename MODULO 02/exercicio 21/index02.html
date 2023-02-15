@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: blueviolet;
+            box-shadow: 1px 1px 1px black;
+            /*O deathtool do chrome ajuda a criar um box shadow  e o border-radius tambem*/
+        }
+        nav > a{
+            background-color: darksalmon;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        main{
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px black;
+        }
+        article{
+            background-color: brown;
+            padding: 5px;
+        }
+        footer{
+            background-color: gray;
+            color: white;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEU SITE</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section is="Notícias">
+            <Article>
+                <h2>Notícias do Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ut repellat porro, suscipit nulla voluptatibus aut possimus natus, placeat non dolor? Totam fugit magnam dolore asperiores aliquam sequi distinctio? Veniam!</p>
+                    <aside>
+                        <p>Site para teste de grouping tags</p>
+                    </aside>
+            </Article>
+        </section>
+    </main>
+    <footer>
+        <p>Rodapé do site</p>
+    </footer>
+   
+</body>
+</html>

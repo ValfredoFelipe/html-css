@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site responsivo</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+
+            min-width: 280px;
+            max-width: 800px;
+        }
+        
+        div.video{
+            background-color: green;
+            margin: 30px;
+            padding: 20px;
+            padding-bottom: 70%;
+            position: relative;
+        }
+        div.video > iframe{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+
+
+
+        }
+            
+            
+        img{
+            width: 100%;
+            /* Para diminuir imagens usa o width percentual*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Testando site responsivo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at corporis hic rerum reprehenderit. Quos vero expedita accusamus nostrum similique pariatur repudiandae ad neque, velit suscipit voluptate animi ab atque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo velit, rem praesentium dignissimos nulla adipisci, dolor voluptatibus ab optio voluptatum laborum neque harum quia dolorem quisquam enim facere sequi commodi.</p>
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum nemo eaque reiciendis necessitatibus modi corporis ab, nostrum doloribus officia aut, similique porro. Ullam, ducimus placeat! Voluptates magni voluptatibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam mollitia eius laudantium sunt incidunt, repellat sint, reiciendis, quis non eaque dicta accusamus veritatis laboriosam aperiam. Dolorum facere totam impedit iusto.</p>
+        <div class="video"><iframe width="800" height="600" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+    </main>
+</body>
+</html>
