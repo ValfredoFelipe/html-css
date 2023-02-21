@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+            
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+
+        }
+        tfoot{
+            background-color: gray;
+            color: white;
+
+        }
+        caption{
+            background-color: gray;
+            font-size: 1.5em;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>Papoulação de São Paulo</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td>4 000 000</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>3 452 457</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>2 569 654</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>4 569 587</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <th> 45 919 049</th>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum suscipit consequuntur excepturi eum consequatur officiis, aut quod eaque nobis minima odit nam odio, ex facilis reiciendis tempora fuga aspernatur rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod omnis harum ullam est, corrupti necessitatibus eius, ab exercitationem odit accusantium! Dicta corrupti quo ipsam, consequatur delectus perferendis distinctio quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequatur dolore rerum iusto! Nihil qui fugit excepturi similique, ex, laboriosam neque nesciunt error accusamus aliquid consequuntur sit consequatur, cumque expedita. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque est molestias distinctio provident. Enim similique maiores quam iste. Sunt, nisi doloremque reprehenderit pariatur quam repudiandae alias commodi ipsam quis officia!</p>
+</body>
+</html>
